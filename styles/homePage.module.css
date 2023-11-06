@@ -1,0 +1,45 @@
+.main_Container {
+  border: 1px solid gray;
+  width: 100%;
+  min-height: 800px;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.table_Container {
+  min-width: 500px;
+  padding: 0px;
+}
+
+.table_header {
+  display: flex;
+}
+
+.table_headerBox {
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+.sn {
+  width: 70px;
+}
+
+.title {
+  width: 400px;
+}
+
+.descreption {
+  width: 500px;
+}
+
+.Link {
+  width: 100px;
+}
+
+.table_body {
+  display: block;
+}
+
+.table_bodyRow {
+  display: flex;
+}

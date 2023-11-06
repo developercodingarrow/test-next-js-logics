@@ -1,46 +1,82 @@
 import Head from "next/head";
 import Link from "next/link";
-import { FontAwesomeIcon, btnStyles } from "../Utiles/commonImports";
-import { faCoffee, faEnvelope, faHouse } from "../Utiles/icons";
-import NavBar from "../Utiles/NavBar";
-import Button from "../Utiles/Button";
+import styles from "../styles/homePage.module.css";
 
 export default function Home() {
   const windowWidth = typeof window !== "undefined" ? window.innerWidth : 0;
+  // single-checkbox
+
+  const tableRow = [
+    {
+      sNO: "1",
+      title: "Custome Radio Button",
+      descreption:
+        "This is custome Radio Button when user click on radion color radio circle and color dots",
+      pageLink: "/html-custome-elements/elements/custome-radio",
+    },
+    {
+      sNO: "2",
+      title: "Custome Single Chek Box",
+      descreption: "we can use this chek box whear we want need true false ",
+      pageLink: "/html-custome-elements/elements/single-checkbox",
+    },
+
+    {
+      sNO: "3",
+      title: "Multiple Check Box with value",
+      descreption: "we can use these chek box whear we want Arrays of value ",
+      pageLink: "/html-custome-elements/elements/multi-chek-box",
+    },
+  ];
 
   return (
     <>
-      <div>
-        <NavBar />
+      <div className={styles.main_Container}>
+        <div className={styles.testLists_innerContainer}>
+          <div className={styles.table_Container}>
+            <div className={styles.table_header}>
+              <div className={`${styles.table_headerBox} ${styles.sn}`}>
+                S No
+              </div>
+              <div className={`${styles.table_headerBox} ${styles.title}`}>
+                Title
+              </div>
+              <div
+                className={`${styles.table_headerBox} ${styles.descreption}`}
+              >
+                Descreption
+              </div>
+              <div className={`${styles.table_headerBox} ${styles.Link}`}>
+                Link
+              </div>
+            </div>
+            <div className={styles.table_body}>
+              {tableRow.map((el, i) => {
+                return (
+                  <div className={styles.table_bodyRow}>
+                    <div className={`${styles.table_headerBox} ${styles.sn}`}>
+                      {i + 1}
+                    </div>
+                    <div
+                      className={`${styles.table_headerBox} ${styles.title}`}
+                    >
+                      {el.title}
+                    </div>
+                    <div
+                      className={`${styles.table_headerBox} ${styles.descreption}`}
+                    >
+                      {el.descreption}
+                    </div>
+                    <div className={`${styles.table_headerBox} ${styles.Link}`}>
+                      <Link href={el.pageLink}>Page</Link>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div>
-        <FontAwesomeIcon icon={faHouse} />
-      </div>
-
-      <Link href="/login"> Login Page</Link>
-      <Link href="/register"> Register page</Link>
-      <Link href="/CitySearch"> City search page</Link>
-      <Link href="/state"> State search page</Link>
-      <Link href="/about-us">About us</Link>
-      <div style={{ marginTop: "20px", marginBottom: "50px" }}>
-        <Link href={"/login-page"}>Saransh Login Page</Link>
-      </div>
-
-      <div style={{ marginTop: "20px", marginBottom: "50px" }}>
-        <Link href={"/signup-page/"}>Saransh Register Page-1</Link>
-      </div>
-
-      <div style={{ marginTop: "20px", marginBottom: "50px" }}>
-        <Link href={"/signup-page/signup"}>Saransh Register Page</Link>
-      </div>
-
-      <Button
-        className={btnStyles.smallButton}
-        onClick={() => alert("Button Clicked")}
-      >
-        Click Me
-      </Button>
     </>
   );
 }

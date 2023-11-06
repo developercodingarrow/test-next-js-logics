@@ -1,0 +1,26 @@
+/* theme.css */
+
+::root {
+  --primary-background-1: gray;
+  --text-color-1: black;
+  --primary-background-2: red;
+  --text-color-2: blue;
+}
+
+/* Activate Theme 1 */
+.theme-1 {
+  --primary-background: var(--primary-background-1);
+  --text-color: var(--text-color-1);
+}
+
+/* Activate Theme 2 */
+.theme-2 {
+  --primary-background: var(--primary-background-2);
+  --text-color: var(--text-color-2);
+}
+
+/* Default Theme */
+:root {
+  --primary-background: var(--primary-background-1);
+  --text-color: var(--text-color-1);
+}

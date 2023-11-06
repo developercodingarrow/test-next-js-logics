@@ -1,0 +1,30 @@
+.form_container {
+  border: 1px solid red;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_box {
+  border: 1px solid rgb(223, 224, 223);
+  width: 30%;
+  padding: 5px;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.form_lable {
+  width: 30%;
+  display: inline-block;
+  padding: 2px;
+  margin-right: 20px;
+  color: green;
+  font-size: 18px;
+}
+
+.from_input {
+  padding: 5px;
+  margin: 10px 0px;
+  border: 1px solid red;
+}

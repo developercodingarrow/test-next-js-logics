@@ -1,0 +1,21 @@
+.navBar {
+  background-color: red;
+  padding: 50px;
+}
+
+/* Mobile styles (max-width: 767px) */
+@media (max-width: 767px) {
+  .navBar {
+    background-color: blue;
+    padding: 30px;
+  }
+}
+
+/* Tablet styles (min-width: 768px and max-width: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navBar {
+    /* Tablet styles here */
+    background-color: green;
+    padding: 30px;
+  }
+}

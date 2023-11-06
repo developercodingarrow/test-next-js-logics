@@ -1,0 +1,26 @@
+.form_container {
+  border: 5px solid green;
+  min-height: 250px;
+  display: flex;
+  padding-left: 50px;
+}
+
+.form_box {
+  border: 2px solid rgb(60, 0, 255);
+}
+
+.form_lable {
+  width: 100%;
+  display: block;
+  padding: 2px;
+  margin-right: 20px;
+  color: blueviolet;
+  font-size: 18px;
+  border: 1px solid red;
+}
+
+.from_input {
+  padding: 5px;
+  margin: 10px 0px;
+  border: 1px solid yellow;
+}

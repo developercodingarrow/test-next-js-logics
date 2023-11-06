@@ -1,0 +1,9 @@
+.open {
+  background: red;
+  padding: 10px;
+}
+
+.close {
+  background-color: green;
+  padding: 10px;
+}

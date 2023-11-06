@@ -1,0 +1,14 @@
+.form_lable {
+  width: 30%;
+  display: inline-block;
+  padding: 2px;
+  margin-right: 20px;
+  color: green;
+  font-size: 18px;
+}
+
+.from_input {
+  padding: 5px;
+  margin: 10px 0px;
+  border: 1px solid red;
+}

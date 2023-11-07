@@ -53,23 +53,29 @@ export default function Home() {
       pageLink: "/logic-Components/E-commerse-fillter",
     },
     {
-      sNO: "8",
+      SNO: "8",
       title: "React Accordion ",
       descreption: "Accordion Element",
       pageLink: "/html-custome-elements/elements/accordion",
     },
     {
-      sNO: "9",
+      SNO: "9",
       title: "E Commerce Accordion ",
       descreption: "E commerce Accordion",
       pageLink: "/html-custome-elements/elements/e-comerce-accordion",
     },
 
     {
-      sNO: "10",
+      SNO: "10",
       title: "E Commerce Side Bar Accordion Type fillter",
       descreption: "This fillter like E-commerse websites ",
       pageLink: "/html-custome-elements/fillters/SideBarFillter",
+    },
+    {
+      SNO: "11",
+      title: "Home page Product carosole",
+      descreption: "This carosole is  react-multi-carousel  ",
+      pageLink: "/html-custome-elements/saransh/SaranshCarosole",
     },
   ];
 

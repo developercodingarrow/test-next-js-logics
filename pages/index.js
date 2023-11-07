@@ -27,6 +27,50 @@ export default function Home() {
       descreption: "we can use these chek box whear we want Arrays of value ",
       pageLink: "/html-custome-elements/elements/multi-chek-box",
     },
+
+    {
+      sNO: "4",
+      title: "custom Form select option",
+      descreption: "we can use these chek box whear we want Arrays of value ",
+      pageLink: "/html-custome-elements/elements/form-select",
+    },
+    {
+      sNO: "5",
+      title: "dynimce Buttons ",
+      descreption: "craeteed dynimic button we can set size or extra things",
+      pageLink: "/html-custome-elements/elements/Buttons",
+    },
+    {
+      sNO: "6",
+      title: "loading style",
+      descreption: "these loading style is use when we click on button ",
+      pageLink: "/html-custome-elements/elements/loading",
+    },
+    {
+      sNO: "7",
+      title: "Advance Fiiter Search",
+      descreption: "Advance Fillter Like E-commerse ",
+      pageLink: "/logic-Components/E-commerse-fillter",
+    },
+    {
+      sNO: "8",
+      title: "React Accordion ",
+      descreption: "Accordion Element",
+      pageLink: "/html-custome-elements/elements/accordion",
+    },
+    {
+      sNO: "9",
+      title: "E Commerce Accordion ",
+      descreption: "E commerce Accordion",
+      pageLink: "/html-custome-elements/elements/e-comerce-accordion",
+    },
+
+    {
+      sNO: "10",
+      title: "E Commerce Side Bar Accordion Type fillter",
+      descreption: "This fillter like E-commerse websites ",
+      pageLink: "/html-custome-elements/fillters/SideBarFillter",
+    },
   ];
 
   return (

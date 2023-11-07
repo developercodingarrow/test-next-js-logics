@@ -1,0 +1,53 @@
+/* components/BeautifulButton.module.css */
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button:active {
+  background-color: #003a73;
+}
+
+/* Flat Button */
+.flatButton {
+  background-color: #fff;
+  color: #007bff;
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.flatButton:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Outline Button */
+.outlineButton {
+  background-color: transparent;
+  color: #007bff;
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.outlineButton:hover {
+  background-color: #007bff;
+  color: #fff;
+}

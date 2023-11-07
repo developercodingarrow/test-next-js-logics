@@ -1,0 +1,69 @@
+/* Accordion.module.css */
+.accordion {
+  border: 1px solid red;
+  margin-bottom: 10px;
+}
+
+.accordionheader {
+  background-color: #f0f0f0;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordionContent {
+  padding: 10px;
+  display: none;
+}
+
+.accordionContentExpend {
+  display: block;
+  border: 1px solid green;
+}
+
+.accordionSection {
+  border: 1px solid yellow;
+  margin: 10px 0;
+}
+
+.accordionSection .accordionheader {
+  background-color: #f0f0f0;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordionSection .accordionContent {
+  padding: 10px;
+  display: none;
+}
+
+.expanded .accordionContent,
+.expanded .accordionSection .accordionContent {
+  display: block;
+}
+
+.icon {
+  transition: transform 0.2s;
+  padding: 5px;
+}
+
+.closed .icon::before {
+  content: "+";
+}
+
+.open .icon::before {
+  content: "-";
+}
+
+.accordionListContent {
+  border: 1px solid orchid;
+  display: none;
+}
+
+.accordionListContentClose {
+  border: 1px solid plum;
+  display: block;
+}

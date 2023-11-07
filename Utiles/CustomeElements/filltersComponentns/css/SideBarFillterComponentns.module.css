@@ -1,0 +1,64 @@
+/* Page_mainContainer */
+.Page_mainContainer {
+  border: 1px solid red;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding-top: 100px;
+}
+
+.sideBar_container {
+  border: 1px solid gray;
+  width: 20%;
+}
+
+.contnet_part {
+  padding: 10px;
+  border: 1px solid #ddd;
+  width: 70%;
+  display: flex;
+  column-gap: 20px;
+  row-gap: 1px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid gray;
+  width: 200px;
+  height: 200px;
+}
+
+/* ******************************
+*********side bar Fillter********
+*********************************/
+.filed_wraper {
+  background-color: #fff;
+  margin: 10px 0px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.filed_header {
+  background-color: #cccccc65;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Map list render between this box */
+.filed_ListWraper {
+  /* border: 1px solid yellow; */
+  display: block;
+}
+
+.filed_ListWraperClose {
+  display: none;
+}
+
+.filed_list {
+  display: flex;
+  padding: 5px;
+  column-gap: 10px;
+  row-gap: 10px;
+}

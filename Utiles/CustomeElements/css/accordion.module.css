@@ -1,0 +1,35 @@
+/* Accordion.module.css */
+.accordion {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.accordionheader {
+  background-color: #f0f0f0;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordionContent {
+  padding: 10px;
+  display: none;
+}
+
+.accordionContentExpend {
+  display: block;
+}
+
+.icon {
+  transition: transform 0.2s;
+  padding: 5px;
+}
+
+.closed .icon::before {
+  content: "+";
+}
+
+.open .icon::before {
+  content: "-";
+}
